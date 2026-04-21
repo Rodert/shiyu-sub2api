@@ -12,6 +12,7 @@ python3 -m pip install -U mkdocs-material
 python3 -m mkdocs serve
 ```
 
+
 ## 写新教程（推荐流程）
 
 1. 在 `docs/scenarios/<tool>/` 新建目录与页面（参考 `docs/scenarios/ccswitch/`）
