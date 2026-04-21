@@ -1,0 +1,66 @@
+site_name: shiyu-sub2api
+site_description: sub2api 场景化教程（含 ccswitch 等整合）
+repo_url: https://github.com/Rodert/shiyu-sub2api
+repo_name: Rodert/shiyu-sub2api
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search:
+      lang: zh
+
+nav:
+  - 开始:
+      - 这是什么: index.md
+      - 快速开始: getting-started/quickstart.md
+  - 基础用法:
+      - 约定与目录结构: getting-started/structure.md
+  - 场景整合:
+      - 与 ccswitch 整合:
+          - 概览: scenarios/ccswitch/index.md
+          - Step 01 - 准备: scenarios/ccswitch/step-01-prepare.md
+          - Step 02 - 接入: scenarios/ccswitch/step-02-integrate.md
+          - Step 03 - 验证: scenarios/ccswitch/step-03-verify.md
+          - 常见问题: scenarios/ccswitch/troubleshooting.md
+  - 部署与运维:
+      - GitHub Pages 发布: deployment/github-pages.md
+      - Cloudflare Pages 部署: deployment/cloudflare-pages.md
+  - FAQ:
+      - 常见问题: faq/index.md
